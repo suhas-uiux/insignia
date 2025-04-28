@@ -1,0 +1,877 @@
+
+  /* Base Layout */
+  body {
+    min-height: 900vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #330046 0%, #5D093F 1%, #A22944 3%, #3B0244 10%, #9B0912 35%, #FF902C 50%, #9B0912 55%,#572a20 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .clgname p {
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 0.125em;
+    text-align: center;
+    color: aliceblue;
+    padding: 0 1em;
+  }
+  
+  .sdmlogo img,
+  .dvh img {
+    width: 4em;
+  }
+  
+  .hero-section {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Navigation */
+  nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(241, 233, 233, 0.4);
+    backdrop-filter: blur(0.2em);
+    border-radius: 1.5em;
+    z-index: 2;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0.625em;
+  }
+  
+  nav li {
+    white-space: nowrap; /* Prevents line break in list items */
+  }
+  
+  li a {
+    text-decoration: none;
+    color: black;
+    font-size: medium; /* Large to medium font size */
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75em;
+    transition: background 0.3s;
+  }
+  
+  li a:hover {
+    color: #e2e5e9;
+    background: transparent;
+  }
+  
+  /* Scene Section */
+  .scene {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .scene img {
+    position: absolute;
+  }
+  
+  /* Positioning Visuals */
+  .cloud img {
+    width: 100vw;
+    left: 0;
+  }
+  
+ 
+  
+  .mahal img {
+    width: 33.25em;
+    height: 51.875em;
+    top: -12.5em;
+    left: 0;
+    z-index: 2;
+  }
+  
+  .temple1 img {
+    width: 43.75em;
+    height: 25em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18.625em;
+    z-index: 2;
+  }
+  
+  .fort img {
+    width: 26.25em;
+    height: 39.375em;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .auto img,
+  .auto1 img {
+    width: 25em;
+    height: 9.375em;
+    bottom: -6.25em;
+  }
+  
+  .auto img {
+    right: 0;
+    z-index: 2;
+  }
+  
+  .auto1 img {
+    left: 0;
+    z-index: 3;
+  }
+  
+  /* Scroll Animation */
+  .scrolled .mahal img {
+    transform: translateX(-31.25em);
+    transition: transform 1.25s ease;
+  }
+  
+  .scrolled .temple1 img {
+    transform: translate(-50%, -8.5em);
+    transition: transform 1.25s ease;
+  }
+  
+  .scrolled .auto img,
+  .scrolled .auto1 img {
+    transform: translateY(-8.5em);
+    transition: transform 1.25s ease;
+  }
+  
+  .scrolled .fort img {
+    transform: translateX(31.25em);
+    transition: transform 1.25s ease;
+  }
+  /* @keyframes slow-spin {
+    from {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+      transform: translateX(-50%) rotate(360deg);
+    }
+    
+  } */
+  .round img {
+    width: 50em;
+    left: 50%;
+    transform: translateX(-50%);
+    top:1em;
+    z-index: 1;
+    
+  }
+ 
+  
+  .scrolled .round img {
+    transform: translate(-50%, 45em);
+    transition: transform 1.25s ease;
+    z-index: 2;
+    
+  } 
+  
+  .mahal img,
+  .temple1 img,
+  .auto1 img,
+  .auto img,
+  .fort img,
+  .round img {
+    transition: transform 0.5s ease;
+  }
+  
+  /* NEW SECTION BELOW THE VISUALS */
+  .timer-section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 7em 0em;
+  }
+  
+  .side-images {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .right-image {
+    align-items: flex-end;
+  }
+
+  .right-image img {
+    transform: scaleX(-1);
+  }
+  
+  .dance-girl {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .dance-girl img {
+    width: 11em;
+    height: 34em;
+  }
+
+  .yaksha-gana {
+    position: absolute;
+    top: 9em;
+    z-index: 2;
+  }
+  
+  .yaksha-gana img {
+    width: 16em;
+    height: 32em;
+  }
+
+  .time-elephant {
+    position: absolute;
+    top: 37em;
+    z-index: 3;
+  }
+
+  .time-elephant img {
+    width: 20em;
+    height: 20em;
+  }
+
+  .countdown-center {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+  }
+
+  .countdown-container {
+    display: flex;
+    justify-content: center;
+    /* gap: 1rem; */
+    padding: 6rem 0rem;
+    border-radius: 1rem;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .time-box {
+    text-align: center;
+    z-index: 3;
+  }
+  
+  .time-box span {
+    font-size: 4rem;
+    display: block;
+    color: #81071f;
+    letter-spacing: 0.1rem;
+  }
+  
+  .label {
+    font-size: 1rem;
+    color: #81071f;
+    margin-top: 0.5rem;
+  }
+
+  .time-boat {
+    position: absolute;
+    top: -7em;
+    z-index: 4;
+    left: -1em;
+    transform: translateX(-50%);
+  }
+  
+  .time-boat img {
+    width: 50em;
+    height: 42em;
+    z-index: 4;
+  }
+
+  .mandala {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15em;
+    position: relative;
+    height: 35em;
+  }
+  
+  .left, .right, .center {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left {
+    left: -11.8125em;
+    width: 22.625em;
+    height: 22.625em;
+  }
+  
+  .right {
+    right: -11.8125em;
+    width: 22.625em;
+    height: 22.625em;
+  }
+  
+  .center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 37.5em;
+    height: 34.375em;
+    z-index: 2;
+  }
+  
+  .left img {
+    width: 16.875em;
+  }
+  
+  .center img {
+    width: 33.75em;
+  }
+  
+  .right img {
+    width: 16.875em;
+  }
+  
+  @keyframes slow-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .left img, .center img, .right img {
+    animation: slow-spin 45s linear infinite;
+  }
+  
+  
+  /* Info box */
+  .info-box {
+    position: absolute;
+    display: flex;
+    justify-content: center; /* Center items */
+    align-items: center;     /* Vertically align */
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f960;
+    border-radius: 2em;
+    text-align: left;
+    padding: 2em;
+    box-shadow: 0 0 9.6em rgba(168, 158, 13, 0.616);
+    gap: 2em;
+    z-index: 2;
+    flex-wrap: nowrap;
+  }
+  
+  .elephant img {
+    width: 30em;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+    display: block;
+  }
+  
+  .about-info {
+    flex: 1;
+    font-family: sans-serif;
+    font-size: 1.8em;
+    color: #000000;
+    line-height: 1.2em;
+    text-align: justify;
+  }
+
+  .spotlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Prevents overflow if images exceed bounds */
+    padding: 5em;
+  }
+  
+  .descr,
+  .leaf,
+  .kites,
+  .tree {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .actor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .tree {
+    left: 20%;
+    transform: translateX(-87%);
+    width: 35%;
+    top: -21em;
+    z-index: 4;
+  }
+  
+  .tree img {
+    width: 374px;
+    height: 543px;
+    z-index: 4;
+  }
+  
+  .kites {
+    width: 50%;
+    left: -5%;
+    top: -23em;
+    z-index: 2;
+  }
+
+  .kites img {
+    width: 35em;
+    height: 37em;
+    z-index: 2;
+  }
+  
+  .descr {
+    left: 45%;
+    transform: translateX(-45%);
+    top:10%;
+  }
+
+  .descr img {
+    width: 70em;
+    height: 35em;
+    z-index: 1;
+  }
+  
+  .leaf {
+    right: -28%;
+  }
+
+  .leaf img {
+    width: 20em;
+    height: 25em;
+    z-index: 2;
+  }
+  
+  .designs img {
+    z-index: 3;
+    width: 100%;
+  }
+  
+  .events {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .events img{
+    position: absolute;
+  }
+  
+  .events-bg img {
+    width: 100%;
+    height: 200vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .events-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+    font-family:sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .left-doll img {
+    width: 15%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  .right-doll img {
+    width: 18%;
+    right: 0%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  .eventcards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    /* margin-top: 2rem; */
+  }
+  
+  .cultural img {
+    width: 25%;
+    left: 10%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .centralized img {
+    width: 25%;
+    left: 38%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  .technical img {
+    width: 25%;
+    left: 66%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  @keyframes doll-left {
+    0%   { transform: rotate(2deg); }
+    50%  { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+  }
+  
+  @keyframes doll-right {
+    0%   { transform: rotate(-2deg); }
+    50%  { transform: rotate(2deg); }
+    100% { transform: rotate(-2deg); }
+  }
+  
+  @keyframes card-tilt {
+    0%   { transform: rotate(-1deg); }
+    50%  { transform: rotate(1deg); }
+    100% { transform: rotate(-1deg); }
+  }
+  
+  /* Apply to dolls */
+  .left-doll img {
+    animation: doll-right 3s ease-in-out infinite;
+    transform-origin: center bottom;
+  }
+  
+  .right-doll img {
+    animation: doll-left 3s ease-in-out infinite;
+    transform-origin: center bottom;
+  }
+  
+  /* Apply to event cards */
+  .cultural img,
+  .centralized img,
+  .technical img {
+    animation: card-tilt 3s ease-in-out infinite;
+    transform-origin: center top;
+  }
+  
+  .memories-mahal img {
+    padding-top: 45%;
+    width: 100%;
+    height: 27em;
+  }
+
+  .bottom-last {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 2em;
+    color: white;
+  }
+
+  .date-location {
+    padding-left: 5%;
+    font-size: 1.5em;
+  }
+
+  .date-location h3 {
+    color: #FAFF1A;
+  }
+
+  .date-location h2 {
+    padding-top: 1em;
+  }
+
+  .insignia-logo {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .insignia-logo img {
+    width: 15em;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #969696;
+    padding: 20px 0;
+  }
+  
+  footer a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 750px) {
+    .clgname p {
+        font-size: 0.625em;
+    }
+  
+    .dvh img, .sdmlogo img {
+        width: 2.5em;
+        height: 2.5em;
+    }
+  
+    nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(0.2em);
+        border-radius: 0.5em;
+        padding:  0.01rem;
+        width: 90%; /* Increased width */
+        box-sizing: border-box;
+        margin-top: 1.4em;
+    }
+  
+    ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    li {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+  
+    li a {
+        font-size: 0.9em;
+        padding: 0.5rem 0.8rem;
+        border-radius: 0.5em;
+        white-space: nowrap;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+  
+    .title p {
+        font-size: 5em;
+        margin-top: 15rem;
+    }
+    .cloud img{
+        height:565px;
+        width:200%;
+    }
+    .round img{
+        width:480px;
+        top:22%;
+    }
+    .mahal img{
+        width:320px;
+        height: 500px;
+        top:220px;
+        left:-10px;
+        z-index:3;   
+    }
+    .fort img{
+      width:320px;
+      height: 400px;
+      top:37%;
+      right:-20%;
+    }
+    .scrolled .round img {
+      transform: translate(-50%, 37.125em);
+      transition: transform 1.25s ease;
+      z-index: 1;
+    }
+    .dance-girl img,.time-elephant img,.yaksha-gana img{
+      display:none;
+    }
+    .time-boat img{
+      width:450px;
+      height: 400px;
+    }
+    .timer-section{
+      height: 480px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    }
+    .time-boat{
+      position:relative;
+      transform: translate(-2%);
+      top:30px;
+    }
+    .auto1 img{
+      display:none;
+    }
+    .auto img{
+      display:none;
+    }
+    .temple1 img{
+      z-index:3;
+      width: 430px;
+      height: 281px;
+      top: 54%;
+    }
+    .countdown-container{
+      gap:1em;
+      padding-top: 0px;
+      margin-top: 150px;
+    }
+    .time-box span{
+      font-size: 24px;
+    }
+    .left img ,.right img{
+      display:none;
+    }
+    .center img{
+      width:386px;
+    }
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      width: 76%;
+      
+    }
+    .elephant img{
+      width: 292px;
+    }
+    .about-info{
+      font-size:112%;
+      color:black;
+      font-weight:900;
+    }
+    .spotlight{
+      display:flex;
+      flex-direction: column;
+    }
+    .actor{
+      left: 14%;
+    }
+    .tree img{
+      height: 294px;
+    }
+    .kites img{
+      height: 294px;
+    }
+    .leaf img {
+        width: 13em;
+        height: 28em;
+        z-index: 2;
+    }
+    .descr img {
+      width: 29em;
+      height: 35em;
+      z-index: 1;
+    }
+
+    .descr {
+    left: 35%;
+    transform: translateX(-45%);
+    top: 35%;
+    }
+
+   .leaf {
+     right: -8%;
+   }
+
+   .eventcards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 30em;
+  }
+
+  .eventcards > div {
+    display: block;
+    text-align: center;
+    width: 80%;
+    left: 25%;
+    padding: 0% 10%;
+  }
+
+  .eventcards picture,
+  .eventcards img {
+    
+    width: 100%;
+    max-width: 300px; /* control image size */
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .memories-mahal img{
+    height: inherit;
+    position: relative;
+    top: 372px;
+   }
+
+   .bottom-last{
+    flex-wrap:wrap;
+    top: 366px;
+   }
+   footer{
+    position:relative;
+    top: 390px;
+   }
+   .events-bg img{
+    z-index:-1;
+    width:inherit;
+   }
+
+  /* Reset layout for non-mob elements to prevent stacking everything */
+
+}
