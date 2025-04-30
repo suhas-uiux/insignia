@@ -3,7 +3,7 @@
   body {
     min-height: 900vh;
     margin: 0;
-    background: linear-gradient(to bottom, #330046 0%, #5D093F 1%, #A22944 3%, #3B0244 10%, #9B0912 35%, #FF902C 50%, #9B0912 55%,#572a20 100%);
+    background: linear-gradient(to bottom, #330046 0%, #5D093F 1%, #A22944 3%, #3B0244 10%, #9B0912 35%, #FF902C 47%, #9B0912 65%,#572a20 100%);
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -32,7 +32,7 @@
   
   .sdmlogo img,
   .dvh img {
-    width: 4em;
+    width: 4.44vw;
   }
   
   .hero-section {
@@ -48,7 +48,7 @@
     background: rgba(241, 233, 233, 0.4);
     backdrop-filter: blur(0.2em);
     border-radius: 1.5em;
-    z-index: 2;
+    z-index: 3;
   }
   
   ul {
@@ -58,6 +58,7 @@
     gap: 1.2rem;
     margin: 0;
     padding: 0.625em;
+    
   }
   
   nav li {
@@ -95,67 +96,64 @@
     width: 100vw;
     left: 0;
   }
-  
+  .footer-logo-wrap img{
+    width:320px;
+  }
  
   
   .mahal img {
-    width: 33.25em;
-    height: 51.875em;
+    width: 44.94vw;
+    height: 123.22vh;
     top: -12.5em;
     left: 0;
     z-index: 2;
   }
   
   .temple1 img {
-    width: 43.75em;
-    height: 25em;
+    width: 48.61vw;
+    height: 60.44vh;
     left: 50%;
     transform: translateX(-50%);
-    top: 18.625em;
+    top: 44.11%;
     z-index: 2;
   }
   
   .fort img {
-    width: 26.25em;
-    height: 39.375em;
+    width: 34.17vw;
+    height: 95vh;
     right: 0;
     z-index: 2;
   }
   
   .auto img,
   .auto1 img {
-    width: 25em;
-    height: 9.375em;
-    bottom: -6.25em;
+    width: 27.78vw;
+    height: 22.67vh;
+    bottom: 2.89%;
   }
   
   .auto img {
     right: 0;
     z-index: 2;
   }
-  
   .auto1 img {
     left: 0;
     z-index: 3;
   }
-  
   /* Scroll Animation */
   .scrolled .mahal img {
-    transform: translateX(-31.25em);
+    transform: translateX(-115%);
     transition: transform 1.25s ease;
   }
-  
   .scrolled .temple1 img {
     transform: translate(-50%, -8.5em);
     transition: transform 1.25s ease;
   }
-  
   .scrolled .auto img,
   .scrolled .auto1 img {
     transform: translateY(-8.5em);
     transition: transform 1.25s ease;
   }
-  
   .scrolled .fort img {
     transform: translateX(31.25em);
     transition: transform 1.25s ease;
@@ -170,7 +168,7 @@
     
   } */
   .round img {
-    width: 50em;
+    width: 47em;
     left: 50%;
     transform: translateX(-50%);
     top:1em;
@@ -394,6 +392,15 @@
     object-fit: contain;
     display: block;
   }
+  .info-box .ele-insignia {
+    position: absolute;
+    left: 16%;
+  }
+
+  .info-box .ele-insignia img {
+    z-index: 3;
+    width: 26%;
+  }
   
   .about-info {
     flex: 1;
@@ -402,6 +409,98 @@
     color: #000000;
     line-height: 1.2em;
     text-align: justify;
+  }
+  .spotlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Prevents overflow if images exceed bounds */
+    padding: 5em;
+  }
+
+  /* Sub elements of the singer section done absolute position divs */
+  .descr,
+  .leaf,
+  .actor-bg,
+  .shashwat-desc,
+  .shashwat-head, 
+  .about-shashwat {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Left part of section - with kite, tree and singer image */
+  .actor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Kite tree bg */
+  .actor-bg {
+    left: 15%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .actor-bg img {
+    width: 35em;
+    height: 37em;
+    z-index: 2;
+  }
+
+  /* Shashwat singer img */
+  .shashwat {
+    transform: translateX(-50%);
+    position: absolute;
+    top: -29em;
+    width: 55%;
+    z-index: 3;
+  }
+
+  .shashwat img {
+    width: 85%;
+  }
+
+  /* Right part - about shashwat description */
+  .about-shashwat {
+    position: relative;
+  }
+
+  /* Heading in samkaran image */
+  .shashwat-head {
+    width: 85%;
+    left: 15%;
+    top: -20em;
+  }
+  h1{
+    font-size:10px;
+  }
+
+  .shashwat-head img {
+    width: 100%;
+  }
+
+  /* Text added about description of singer */
+  .shashwat-desc {
+    width: 48%;
+    left: 34%;
+    padding-top: 3em;
+}
+
+  .shashwat-desc p {
+    font-size: 1.5em;
+    font-family: 'Lexend';
+    line-height: 1.5em;
   }
 
   .spotlight {
@@ -415,6 +514,7 @@
     overflow: hidden; /* Prevents overflow if images exceed bounds */
     padding: 5em;
   }
+  
   
   .descr,
   .leaf,
@@ -434,32 +534,73 @@
     align-items: center;
     width: 100%;
   }
+  .scroll-container {
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .scroll-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 20s linear infinite;
+  }
+
+  .image-card {
+    width: 333px;
+    aspect-ratio: 3 / 6;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 12px;
+   
+    flex-shrink: 0;
+  }
+
+  .image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 
   .tree {
-    left: 20%;
+    left: 26%;
     transform: translateX(-87%);
     width: 35%;
-    top: -21em;
+    top: -19em;
     z-index: 4;
   }
   
   .tree img {
-    width: 374px;
-    height: 543px;
+    width: 594px;
+    height: 553px;
     z-index: 4;
   }
   
   .kites {
     width: 50%;
-    left: -5%;
-    top: -23em;
-    z-index: 2;
+    left: -9%;
+    top: -19em;
+    z-index: 5;
   }
 
   .kites img {
-    width: 35em;
-    height: 37em;
-    z-index: 2;
+    width: 29em;
+    height: 30em;
+    z-index: 5;
   }
   
   .descr {
@@ -475,7 +616,8 @@
   }
   
   .leaf {
-    right: -28%;
+    right: -29%;
+    top: 33%;
   }
 
   .leaf img {
@@ -657,8 +799,42 @@
   footer a:hover {
     text-decoration: underline;
   }
-
+ 
+ 
+  /* .scroll-wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .scroll-track {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    animation: scroll-left 30s linear infinite;
+    padding: 2rem 0; 
+  }
+  
+  .scroll-track img {
+  
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+   */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
   @media (max-width: 750px) {
+    body{
+      min-height: 600vh;
+    }
     .clgname p {
         font-size: 0.625em;
     }
@@ -798,10 +974,28 @@
       left: 14%;
     }
     .tree img{
-      height: 294px;
+      height: 344px;
     }
+    .shashwat-desc p{
+      font-size: 1em;
+      position: relative;
+      right: 80%;
+    }
+    .shashwat-desc{
+      width: 65%;
+      left: 42%;
+      padding-top: 3em;
+ top: 10%;
+    }
+    .shashwat-head {
+      width: 143%;
+      left: -52%;
+      top: -3em;
+  }
     .kites img{
-      height: 294px;
+      position: relative;
+      height: 304px;
+      left:14%;
     }
     .leaf img {
         width: 13em;
@@ -852,7 +1046,23 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
+  .scroll-wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    top: 463px;
+}
+h1{
+  display:none;
+}
+.info-box .ele-insignia img {
+  z-index: 3;
+  width: 30%;
+  position: relative;
+  top: -178px;
+  left: 85px;
+}
   .memories-mahal img{
     height: inherit;
     position: relative;
