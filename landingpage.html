@@ -11,16 +11,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-  <!-- Custom Font -->
-  <style>
-    @font-face {
-      font-family: 'Samarkan';
-      src: url('fonts/Samarkan.ttf') format('truetype');
-    }
-  </style>
 
   <!-- External CSS -->
   <link rel="stylesheet" href="landingpage.css" />
+  <link rel="stylesheet" href="landingpageMob.css" />
 </head>
 <body>
 
@@ -143,15 +137,13 @@
 
     <!-- About Section -->
     <div class="info-box">
-      <!-- <div class="insignia">
-        <img src="img/insignia.webp" alt="">
-      </div> -->
         <div class="elephant">
-          <img src="img/elephant.webp" alt="Elephant Design">
+            <img class="elephant" src="img/elephant.webp" alt="Elephant Design">
+            <!-- <img class="insignia" src="img/insignia 26 1.webp" alt="Elephant Design"> -->
         </div>
         <div class="ele-insignia">
-          <img src="img/insignia 26 1.webp" alt="Elephant Design">
-      </div>
+            <img src="img/insignia 26 1.webp" alt="Elephant Design">
+        </div>
         <div class="about-info">
           <p>Insignia is the annual techno-cultural fest of SDM College of Engineering and Technology,
              Dharwad. It serves as a vibrant platform where technology meets creativity, bringing 
@@ -202,44 +194,50 @@
          <img src="img/design.png" alt="">
          <h1 class="events-title">EVENTS</h1>
     </div>
-    <div class="left-doll tilt-image">
+    <div class="left-doll">
         <img src="img/maledoll.webp" alt="">
     </div>
-    <div class="right-doll tilt-image">
+    <div class="right-doll">
         <img src="img/girl.webp" alt="">
     </div>
     <div class="eventcards">
-        <div class="cultural tilt-image">
-          <picture>
-            <source srcset="img/cultural_mob.webp" media="(max-width: 750px)">
-            <source srcset="img/cultural.webp" media="(min-width: 768px)">
-            <img src="img/cultural.webp" alt="">
-          </picture>
-        </div>
-        <div class="centralized tilt-image">
-          <picture>
-            <source srcset="img/centralized_mob.webp" media="(max-width: 767px)">
-            <source srcset="img/central.webp" media="(min-width: 768px)">
-            <img src="img/central.webp" alt="">
-          </picture>
-        </div>
-        <div class="technical tilt-image">
-          <picture>
-            <source srcset="img/technical_mob.webp" media="(max-width: 767px)">
-            <source srcset="img/tech.webp" media="(min-width: 768px)">
-            <img src="img/tech.webp" alt="">
-          </picture>
-        </div>
+        <a href="events.html">
+            <div class="cultural">
+                <picture>
+                  <source srcset="img/cultural_mob.webp" media="(max-width: 750px)">
+                  <source srcset="img/cultural.webp" media="(min-width: 768px)">
+                  <img src="img/cultural.webp" alt="">
+                </picture>
+            </div>
+        </a>
+        <a href="events.html">
+            <div class="centralized">
+                <picture>
+                  <source srcset="img/centralized_mob.webp" media="(max-width: 767px)">
+                  <source srcset="img/central.webp" media="(min-width: 768px)">
+                  <img src="img/central.webp" alt="">
+                </picture>
+            </div>
+        </a>
+        <a href="events.html">
+            <div class="technical">
+                <picture>
+                  <source srcset="img/technical_mob.webp" media="(max-width: 767px)">
+                  <source srcset="img/tech.webp" media="(min-width: 768px)">
+                  <img src="img/tech.webp" alt="">
+                </picture>
+            </div>
+        </a>
     </div>
-    
   </div>
   
    <!-- Designs Section -->
    <div class="memories-mahal">
     <img src="img/Vectors.webp" alt="">
    </div>
-   <h1>WALL OF FAME</h1>
-    <div class="scroll-container">
+   
+   <h1 class="wall-of-fame">WALL OF FAME</h1>
+   <div class="scroll-container">
     <div class="scroll-track">
       <!-- Repeat your image cards -->
       <div class="image-card"><img src="img/any.webp" alt="Portrait"></div>
@@ -269,27 +267,31 @@
         <p>ANUSH - 8197517399</p>
         <h2>SOCIAL MEDIA</h2>
         <div class="social-media">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <a href="https://www.instagram.com/sdmcet_dwd/"><img src="img/Instagram.webp" alt=""></a>
+            <a href="https://youtube.com/@insigniaofficial?si=kWpCDdvzLlzcuoBq"><img src="img/YouTube.webp" alt=""></a>
+            <a href="https://www.facebook.com/SdmCollegeofEngineering/"><img src="img/Facebook.webp" alt=""></a>
         </div>
     </div>
-    <div class="footer-logo-wrap">
+
+    <!-- <div class="footer-logo-wrap"> -->
+    <div class="insignia-logo">
       <!-- <img
         class="footer-white"
         src="img/insignia white 4.svg"
         alt="Insignia Logo"
       /> -->
+      <h1 class="insignia-title">INSIGNIA'25</h1>
       <img
-        class="footer-logo"
         src="img/insignia 2 8svg.svg"
         alt="Insignia Logo"
       />
     </div>
    </div>
+
     <footer>
         <p>© 2025 Developed by team <a href="https://sdmcetqwertyio.com" target="_blank">QWERTY.I/O</a>.</p>
     </footer>
+    
   <!-- JavaScript File -->
   <script src="landingpage.js"></script>
 </body>
