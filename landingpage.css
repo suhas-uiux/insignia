@@ -802,3 +802,326 @@
   footer a:hover {
     text-decoration: underline;
   }
+@media (max-width: 750px) {
+    body{
+      min-height: 200vh;
+    }
+
+    .clgname p {
+        font-size: 0.625em;
+    }
+  
+    .dvh img, .sdmlogo img {
+        width: 12vw;
+        height: 12vw;
+    }
+  
+    nav {
+        width: 90%;
+        box-sizing: border-box;
+        margin-top: 1.4em;
+    }
+  
+    ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    li {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+  
+    li a {
+        font-size: 0.9em;
+        padding: 0.5rem 0.8rem;
+        border-radius: 0.5em;
+        white-space: nowrap;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cloud img{
+        height: 150vw;
+        width: 200%;
+    }
+
+    .round img{
+        /* width: 480px; */
+        width: 125vw;
+        top:22%;
+    }
+
+    .mahal img{
+        /* width: 320px; */
+        width: 80vw;
+        /* height: 500px; */
+        height: 120vw;
+        /* top: 220px; */
+        top: 50vw;
+        /* left: -10px; */
+        left: -2vw;
+        z-index: 3;
+    }
+
+    .fort img{
+      /* width:320px; */
+      width: 85vw;
+      /* height: 400px; */
+      height: 100vw;
+      top: 37%;
+      right: -20%;
+    }
+    
+    .temple1 img{
+        z-index:3;
+        width: 430px;
+        height: 281px;
+        top: 55%;
+    }
+
+    .scrolled .round img {
+      transform: translate(-50%, 140vw);
+      transition: transform 1.25s ease;
+      z-index: 1;
+    }
+
+    .auto1 img, .auto img, .dance-girl img,.time-elephant img,.yaksha-gana img{
+      display:none;
+    }
+
+    .time-boat img{
+      /* width: 450px; */
+      width: 115vw;
+      /* height: 400px; */
+      height: 90vw;
+    }
+
+    .timer-section{
+      height: 480px;
+      padding: 0em;
+    }
+
+    .time-boat{
+      position:relative;
+      transform: translate(-2%);
+      top: 30px;
+    }
+    
+    .countdown-container{
+      gap: 0.5em;
+      padding-top: 0px;
+      /* margin-top: 150px; */
+      margin-top: 25vw;
+    }
+
+    .time-box span{
+      font-size: 24px;
+    }
+
+    .left img ,.right img{
+      display: none;
+    }
+
+    .center img{
+      /* width: 386px; */
+      width: 100vw;
+    }
+
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      width: 76%;
+      gap: 0;
+    }
+
+    .scroll-container {
+      height: 150vh;
+    }
+
+    .elephant img {
+      /* width: 292px; */
+      width: 85vw;
+    }
+    
+    .wall-of-fame{
+      position: relative;
+      top: 396px;
+    }
+
+    .ele-insignia {
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .ele-insignia img {
+        width: 8em;
+    }
+
+    .about-info {
+      font-size: 100%;
+      color:black;
+      font-weight: 600;
+    }
+
+    .spotlight{
+      display:flex;
+      flex-direction: column;
+    }
+
+    .actor{
+      left: 14%;
+    }
+
+    .tree img{
+      height: 344px;
+    }
+
+    .shashwat-desc p{
+      font-size: 1em;
+      position: relative;
+      right: 80%;
+    }
+
+    .shashwat-desc{
+      width: 65%;
+      left: 42%;
+      padding-top: 3em;
+      top: 10%;
+    }
+
+    .shashwat-head {
+      width: 143%;
+      left: -52%;
+      top: -2em;
+    }
+
+    .kites img{
+      position: relative;
+      height: 304px;
+      left:14%;
+    }
+
+    .leaf img {
+        width: 13em;
+        height: 28em;
+        z-index: 2;
+    }
+
+    .descr img {
+      width: 29em;
+      height: 35em;
+      z-index: 1;
+    }
+
+    .descr {
+    left: 35%;
+    transform: translateX(-45%);
+    top: 35%;
+    }
+    
+    .leaf {
+     right: -8%;
+    }
+  
+    .designs img {
+        padding-top: 2em;
+        width: 50em;
+        height: 4em;
+    }
+
+   .events-bg img{
+    z-index: -1;
+    width: inherit;
+   }
+
+   .events-title {
+    font-size: 3rem;
+    top: 5%;
+   }
+
+   .left-doll img {
+    width: 25%;
+  }
+  
+  .right-doll img {
+    width: 30%;
+  }
+
+  .eventcards {
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 28em;
+    padding-top: 8em;
+  }
+  
+  .eventcards div {
+    display: block;
+    text-align: center;
+    width: 80%;
+    left: 25%;
+    padding: 0% 10%;
+  }
+
+  .eventcards a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .eventcards picture,
+  .eventcards img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .memories-mahal img {
+    height: inherit;
+    position: relative;
+    top: 150vw;
+   }
+
+   .wall-of-fame {
+    padding-top: 3.5em;
+    font-size: 3rem;
+   }
+
+   .scroll-container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 350px;
+  }
+
+   .bottom-last {
+    flex-wrap:wrap;
+    top: 366px;
+   }
+
+   .date-location {
+    font-size: 0.8em;
+   }
+
+   .insignia-logo img {
+    width: 10em;
+   }
+
+   .insignia-logo h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+   }
+
+   footer {
+    position: relative;
+    top: 22em;
+   }
+}
